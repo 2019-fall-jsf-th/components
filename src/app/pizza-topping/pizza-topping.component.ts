@@ -15,7 +15,7 @@ export class PizzaToppingComponent implements OnInit {
   //constructor2(pizzaSvc: PizzaService) {
   //  this.pizzaSvc2 = pizzaSvc;
   //}
-  availablePizzaToppings: [];
+  availablePizzaToppings = [];
 
   ngOnInit() {
 
