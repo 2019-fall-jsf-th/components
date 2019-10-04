@@ -32,4 +32,16 @@ export class PizzaToppingComponent implements OnInit {
     this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaTopping();
   }
 
+  total = 0;
+
+  calculateTotal() {
+    this.total = this.availablePizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price 
+        , 0
+      )
+    ;
+  }
+
 }
