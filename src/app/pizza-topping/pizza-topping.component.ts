@@ -28,7 +28,7 @@ export class PizzaToppingComponent implements OnInit {
     // const pts = ps.getAvailablePizzaToppings();
     // console.log(pts);
 
-    this.pizzaSvc.getAvailablePizzaToppings();
+    this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
     console.log(this.availablePizzaToppings);
   }
 
