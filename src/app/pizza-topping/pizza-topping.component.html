@@ -1,10 +1,21 @@
 <h1>Available Pizza Toppings</h1>
 
-<div
-    *ngFor='let pt of availablePizzaToppings'
->
-    <!-- those are printed parens below, not syntactic parens -->
-    <!-- and angular has pipes - this one pipes to format-as-currency !! -->
-    {{ pt.name }} ({{ pt.price | currency }})
+<div *ngFor='let pt of availablePizzaToppings'>
+
+
+    <label>
+
+        <input 
+            type="checkbox"
+            [(ngModel)]="pt.checked"
+        />
+
+        <!-- those are printed parens below, not syntactic parens -->
+        <!-- and angular has pipes - this one pipes to format-as-currency !! -->
+        {{ pt.name }} ({{ pt.price | currency }})
+
+
+    </label>
+
 
 </div>
