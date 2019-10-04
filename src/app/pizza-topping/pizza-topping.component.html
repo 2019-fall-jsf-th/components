@@ -10,3 +10,12 @@
         {{ pt.name }} ({{ pt.price | currency }}) <!-- note pipe, see Angular's Pipes -->
     </label>
 </div>
+
+<div>
+    <button
+        (click)='calculateTotal()'
+    >
+        Calculate Total
+    </button>
+    <h3>Total: {{ total | currency }}</h3>
+</div>
