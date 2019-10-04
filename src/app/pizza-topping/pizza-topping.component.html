@@ -14,8 +14,18 @@
         <!-- and angular has pipes - this one pipes to format-as-currency !! -->
         {{ pt.name }} ({{ pt.price | currency }})
 
-
     </label>
+</div>
 
+<br>
+
+<div>
+    <button
+        (click)='calculateTotal()'
+    >
+        Calculate Total
+    </button>
+    <h3>Total: {{ total | currency }}</h3>
 
 </div>
+

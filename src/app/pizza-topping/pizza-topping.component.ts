@@ -21,7 +21,7 @@ export class PizzaToppingComponent implements OnInit {
 
   ngOnInit() {
     
-    // new up a pizza service.   :-( (if we're every 'new'ing something in Angular, we're probably doing something wrong)
+    // new up a pizza service.   :-( ===> (if we're every 'new'ing something in Angular, we're probably doing something wrong)
     // const ps = new PizzaService();
 
     // call to get pizza toppings.
@@ -30,6 +30,19 @@ export class PizzaToppingComponent implements OnInit {
 
     this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
     console.log(this.availablePizzaToppings);
+  }
+
+
+  total = 0;
+
+  calculateTotal() {
+    this.total = this.availablePizzaToppings
+      .filter( x => x.checked )
+      .reduce(
+        (acc, x) => acc + x.price
+        , 0
+      )
+    ;
 
   }
 
