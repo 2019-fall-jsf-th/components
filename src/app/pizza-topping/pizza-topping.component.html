@@ -10,5 +10,9 @@
         <!-- [(ngModel)]="pt.checked" = checked={{pt.checked}} -->
         {{pt.name}} {{pt.price | currency}}
     </label>
-    
 </div>
+
+
+<button (click)='calculateTotal()' >Calculate</button>
+
+<h2>{{ total | currency}}</h2>
