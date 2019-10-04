@@ -16,7 +16,7 @@ export class PizzaService {
 
     return pizzaToppingFromWebService.map(x => ({
       ...x
-      , checked: true
+      , checked: false
     }));
   }
 }
