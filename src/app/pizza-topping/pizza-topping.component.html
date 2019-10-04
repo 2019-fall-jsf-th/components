@@ -2,5 +2,11 @@
 <div
     *ngFor='let pt of availablePizzaToppings'
 >
-    {{ pt.name }} ({{ pt.price | currency }})
+    <label>
+        <input
+            type="checkbox"
+            [(ngModel)]="pt.checked"
+        >
+        {{ pt.name }} ({{ pt.price | currency }}) <!-- note pipe, see Angular's Pipes -->
+    </label>
 </div>
