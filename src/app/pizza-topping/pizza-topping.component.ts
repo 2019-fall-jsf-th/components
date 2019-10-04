@@ -12,13 +12,16 @@ export class PizzaToppingComponent implements OnInit {
 	// Will need to use "this" -> this.pizzaSrv
 	constructor(private pizzaSrv: PizzaService) { } 
 
+	toppings = [];
+
 	ngOnInit() {
 
 		const ps = new PizzaService();
 
-		const pts = this.pizzaSrv.getAvailablePizzaToppings();
+		this.toppings = this.pizzaSrv.getAvailablePizzaToppings();
 
-		console.log(pts);
+		console.log(this.toppings);
+
 	}
 
 }
