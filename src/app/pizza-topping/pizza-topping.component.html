@@ -1,1 +1,10 @@
-<p>pizza-topping works!</p>
+<h1>Available Pizza Toppings</h1>
+
+<div
+    *ngFor='let pt of availablePizzaToppings'
+>
+    <!-- those are printed parens below, not syntactic parens -->
+    <!-- and angular has pipes - this one pipes to format-as-currency !! -->
+    {{ pt.name }} ({{ pt.price | currency }})
+
+</div>
