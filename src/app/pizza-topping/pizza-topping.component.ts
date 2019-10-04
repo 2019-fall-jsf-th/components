@@ -28,4 +28,16 @@ export class PizzaToppingComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
+  total = 0;
+
+  calculateTotal() {
+    this.total = this.availablePizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price
+        , 0
+      )
+      ;
+  }
+
 }
