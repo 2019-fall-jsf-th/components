@@ -10,3 +10,13 @@
         {{ pt.name }} ({{ pt.price | currency }})
     </label>
 </div>
+<br>
+<div>
+    <!-- When clicked, will add up pizza topping total prices -->
+    <button
+        (click)='calculateTotal()'
+    >
+        Calculate Total
+    </button>
+    <h3>Total: {{ total | currency }}</h3>
+</div>
