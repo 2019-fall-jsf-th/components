@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-pizza-topping',
@@ -7,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PizzaToppingComponent implements OnInit {
 
-  constructor() { }
+  // MAGIC DI (dependency injection)
+  constructor(private pizzaSvc: PizzaService) {
+
+
+
+
+  }
+
+
+  availablePizzaToppings = [];
 
   ngOnInit() {
+    
+    // new up a pizza service.   :-( (if we're every 'new'ing something in Angular, we're probably doing something wrong)
+    // const ps = new PizzaService();
+
+    // call to get pizza toppings.
+    // const pts = ps.getAvailablePizzaToppings();
+    // console.log(pts);
+
+    this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
+    console.log(this.availablePizzaToppings);
+
   }
 
 }
