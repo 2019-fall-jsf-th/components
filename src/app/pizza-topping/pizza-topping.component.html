@@ -3,6 +3,21 @@
          Available Pizza Toppings
      </mat-card-title>
      <mat-card-content>
+        <br>
+        <button
+            mat-button
+            (click)='checkAllToppings()'
+        >
+            All
+        </button>
+         <button
+             mat-button
+             (click)='unCheckAllToppings()'
+             >
+             None
+        </button>
+         <br>
+         <br>
         <div
             *ngFor='let pt of availablePizzaToppings'
         >
@@ -17,13 +32,13 @@
         </div>
         <br>
         <div>
-            <button
+            <!-- <button
                 mat-raised-button
                 color='accent'
                 (click)='calculateTotal()'
             >
                 Calculate Total
-            </button>
+            </button> -->
             <h3>Total: {{ total | currency }}</h3>
         </div>
      </mat-card-content>
