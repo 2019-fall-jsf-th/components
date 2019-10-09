@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PizzaToppingComponent } from './pizza-topping/pizza-topping.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     FormsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
