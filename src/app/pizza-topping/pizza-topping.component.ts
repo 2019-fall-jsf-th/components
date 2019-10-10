@@ -31,9 +31,24 @@ export class PizzaToppingComponent implements OnInit {
   calculateTotal() {
     this.total = this.availablePizzaToppings
       .filter(x => x.checked)
-      .reduce((acc, x) => acc + x.price
+      .reduce(
+        (acc, x) => acc + x.price
         , 0
       )
     ;
+  }
+
+  ngOnInit() {
+
+    // New up a pizza service. : - (
+    //const ps = new PizzaService();
+
+    // Call get pizza toppings.
+    //const pts = ps.getAvailablePizzaToppings();
+    //console.log(pts);
+
+    this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
+    console.log(this.availablePizzaToppings);
+    this.calculateTotal();
   }
 }

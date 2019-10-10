@@ -7,17 +7,23 @@ export class PizzaService {
 
   constructor() { }
 
-  // following is added:
   public getAvailablePizzaToppings() {
-    const pizzaToppingsFromWebservice = [
-      { name: "Pepperoni", price: 1.50}
-      , { name: "Olives", price: 3.50}
+
+    const pizzaToppingsFromWebService = [
+      { name: "Pepperoni", price: 2.5, checked: true }
+      , { name: "Sausage", price: 2.5 }
+      , { name: "Chicken", price: 2.25 }
+      , { name: "Olives", price: 3.5 }
+      , { name: "Mushrooms", price: 2.75 }
+      , { name: "Stuffed crust", price: 3.75 }
+      , { name: "Extra Cheese", price: 3.75 }
+      , { name: "Hot peppers", price: 1.75 }
+      , { name: "Garlic powder", price: 0.75, checked: true }
     ];
 
-    return pizzaToppingsFromWebservice.map( x => ({ // parens around object
-        ...x
-        , checked: false
-      })
-    );
+    return pizzaToppingsFromWebService.map(x => ({
+      ...x
+      , checked: x.checked ? true : false
+    }));
   }
 }
