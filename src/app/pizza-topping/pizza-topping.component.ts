@@ -47,7 +47,7 @@ export class PizzaToppingComponent implements OnInit {
     //const pts = ps.getAvailablePizzaToppings();
     //console.log(pts);
 
-    this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
+    this.availablePizzaToppings = this.pizzaService.getAvailablePizzaToppings();
     console.log(this.availablePizzaToppings);
     this.calculateTotal();
   }
