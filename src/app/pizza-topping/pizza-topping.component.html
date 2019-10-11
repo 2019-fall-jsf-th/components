@@ -17,16 +17,7 @@
         <mat-checkbox [(ngModel)]="pt.checked"> {{ pt.name }} ({{ pt.price | currency }}) </mat-checkbox>
         
         </div>
-        <br>
-        <div>
-            <button
-                (click)='calculateTotal()'
-                mat-raised-button color="accent"
-            >
-                Calculate Total
-            </button>
-            <h3>Total: {{ total | currency }}</h3>
-        </div>
+        <h3>Total: {{ total | currency }}</h3>
 
     </mat-card-content>
 </mat-card>
