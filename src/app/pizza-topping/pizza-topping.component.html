@@ -13,9 +13,11 @@
     </mat-checkbox>
     
         </div>
-<br>
+        <br>
         <div>
             <button
+                mat-raised-button
+                color="accent"
             (click)='calculateTotal()'
             >
             Calculate Total
@@ -23,6 +25,5 @@
             <h3>Total: {{ total | currency }}</h3>
         </div>
     </mat-card-content>
-
 </mat-card>
 
