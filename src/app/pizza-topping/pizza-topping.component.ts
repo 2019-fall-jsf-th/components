@@ -29,6 +29,16 @@ export class PizzaToppingComponent implements OnInit {
     ;
   }
 
+  checkAll() {
+      this.availablePizzaToppings = this.availablePizzaToppings
+          .map(x => ({ ...x, checked: true }));
+  }
+
+  uncheckAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings
+        .map(x => ({ ...x, checked: false }));
+  }
+
   ngOnInit() {
       // don't ever use "new", let Angular inject instead
       // const pizzaService = new PizzaService();

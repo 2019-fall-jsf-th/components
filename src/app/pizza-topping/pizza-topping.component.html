@@ -4,6 +4,14 @@
             <h1>Available Pizza Toppings</h1>
         </mat-card-title>
         <mat-card-content>
+            <button
+                mat-button
+                (click)='checkAll()'
+            >All</button>
+            <button
+                mat-button
+                (click)='uncheckAll()'
+            >None</button>
 
     <div id="toppingChoices"
         *ngFor='let pt of availablePizzaToppings'
