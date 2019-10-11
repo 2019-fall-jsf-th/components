@@ -2,13 +2,8 @@
 <div
     *ngFor='let pt of availablePizzaToppings'
 >
-    <label>
-        <input 
-            type="checkbox"
-            [(ngModel)]="pt.checked"
-        />
-        {{ pt.name }} ({{ pt.price | currency }})
-    </label>
+    <mat-checkbox [(ngModel)]="pt.checked"> {{ pt.name }} ({{ pt.price | currency }}) </mat-checkbox>
+   
 </div>
 <br>
 <div>
