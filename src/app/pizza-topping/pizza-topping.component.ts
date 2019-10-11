@@ -17,15 +17,6 @@ export class PizzaToppingComponent implements OnInit {
   // }
 
   availablePizzaToppings = [];
-  ngOnInit() {
-    // don't ever use "new", let Angular inject instead
-    // const pizzaService = new PizzaService();
-    // const pizzaTopppings = pizzaService.getAvailablePizzaToppings();
-    // console.log(pizzaTopppings);
-    // :(
-      this.availablePizzaToppings = this.pizzaService.getAvailablePizzaToppings();
-      console.log(this.availablePizzaToppings);
-  }
 
   total = 0;
   calculateTotal() {
@@ -39,6 +30,11 @@ export class PizzaToppingComponent implements OnInit {
   }
 
   ngOnInit() {
+      // don't ever use "new", let Angular inject instead
+      // const pizzaService = new PizzaService();
+      // const pizzaTopppings = pizzaService.getAvailablePizzaToppings();
+      // console.log(pizzaTopppings);
+      // :(
 
     // New up a pizza service. : - (
     //const ps = new PizzaService();
