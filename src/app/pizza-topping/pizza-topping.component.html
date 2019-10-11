@@ -5,23 +5,25 @@
     <mat-card-content>
         <div
             *ngFor='let pt of availablePizzaToppings'
-        >
+            >
             <mat-checkbox
                 [(ngModel)]="pt.checked"
-        >
+            >
             {{ pt.name }} ({{ pt.price | currency }})        
             </mat-checkbox>
     
-            </div>
-            <br>
-            <div>
-            <button
+        </div>
+        <br>
+        <div>
+            <button 
+                mat-raised-button 
+                color="accent"
                 (click)='calculateTotal()'
-            >
-             Calculate Total
+            >   
+                Calculate Total
             </button>
             <h3>Total: {{ total | currency }}</h3>
-            </div>
+        </div>
             </mat-card-content>
 </mat-card>
 
