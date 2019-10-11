@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
+import { CheckboxControlValueAccessor } from '@angular/forms';
 
 @Component({
   selector: 'app-pizza-topping',
@@ -42,4 +43,15 @@ export class PizzaToppingComponent implements OnInit {
       )
     ;
   }
+  
+  checkAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: true}));
+  }
+
+  uncheckAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false}));
+  }
+
+
 }
+
