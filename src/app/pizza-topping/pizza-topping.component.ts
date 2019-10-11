@@ -67,4 +67,3 @@ export class PizzaToppingComponent implements OnInit {
     this.availablePizzaToppings = this.pizzaService.getAvailablePizzaToppings();
     console.log(this.availablePizzaToppings);
   }
-}
