@@ -32,9 +32,8 @@ export class PizzaToppingComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
-  total = 0;
-  calculateTotal() {
-    this.total = this.availablePizzaToppings
+  get total() {
+    return this.availablePizzaToppings
       .filter(x => x.checked)
       .reduce(
         (acc, x) => acc + x.price
@@ -43,6 +42,12 @@ export class PizzaToppingComponent implements OnInit {
     ;
   }
 
+// Getter get <name of variable/property>() {}
+ /*
+  get total() {
+    return 667;
+  }
+*/
   selectAll() {
     this.availablePizzaToppings = this.availablePizzaToppings.map( x => ({...x, checked: true}));
   }
