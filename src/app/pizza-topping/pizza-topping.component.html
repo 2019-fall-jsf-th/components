@@ -1,5 +1,5 @@
 <mat-card>
-    
+
   <mat-card-title>
     <h1>Available Pizza Toppings</h1>
   </mat-card-title>
@@ -12,7 +12,11 @@
     </div>
     <br>
     <div>
-      <button (click)='calculateTotal()'>
+      <button 
+        mat-raised-button 
+        color='accent' 
+        (click)='calculateTotal()'
+      >
         Calculate Total
       </button>
       <h3>Total: {{ total | currency }}</h3>
