@@ -1,3 +1,7 @@
+#pizzaComponentContainer {
+    width: 70%;
+}
+
 #pizzaComponentContainer h1 {
     text-decoration: underline;
 }
