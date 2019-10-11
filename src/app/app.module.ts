@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingComponent
+    PizzaToppingComponent,
+    WisconsinSalesTaxComponent
   ],
   imports: [
     BrowserModule,
