@@ -7,16 +7,16 @@
             <input
                 type="number"
                 matInput
-                    [(ngMode)]="userInput"
+                [(ngModel)]="userInput"
             />
         </mat-form-field>
         <button
             mat-button
-            (click)='calculateSalesTax'
+            (click)='calculateSalesTax()'
         >
             Calculate Sales Tax
         </button>
         <br />
-        <h3>Total: {{ total | currency }}</h3>
+        <h3>Total: ${{ totalWithTax }}</h3>
     </mat-card-content>
 </mat-card>
