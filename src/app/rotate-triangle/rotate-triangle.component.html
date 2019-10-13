@@ -1,0 +1,55 @@
+<mat-card style="background-color: gray;">
+
+    <mat-card-title>
+        Enter Triangle Point Values
+    </mat-card-title>
+
+    <mat-card-content>
+        <svg height="100" width="100">
+            <polygon points="50,0 100,100 0,100" style="fill:#003153;stroke:none;stroke-width:0" />
+        </svg>
+    </mat-card-content>
+
+    <mat-card-footer *ngFor="let c of coords">
+        <fieldset>
+            <legend>Point 1</legend>
+            <mat-label>X Coord</mat-label>
+            <mat-form-field>
+                <input matInput value={{c.coordOne.x}}>
+            </mat-form-field>
+            <mat-label>Y Coord</mat-label>
+            <mat-form-field>
+                <input matInput value={{c.coordOne.y}}>
+            </mat-form-field>
+        </fieldset>
+
+        <fieldset>
+            <legend>Point 2</legend>
+            <mat-label>X Coord</mat-label>
+            <mat-form-field>
+                <input matInput value={{c.coordTwo.x}}>
+            </mat-form-field>
+            <mat-label>Y Coord</mat-label>
+            <mat-form-field>
+                <input matInput value={{c.coordTwo.y}}>
+            </mat-form-field>
+        </fieldset>
+
+        <fieldset>
+            <legend>Point 3</legend>
+            <mat-label>X Coord</mat-label>
+            <mat-form-field>
+                <input matInput value={{c.coordThree.x}}>
+            </mat-form-field>
+            <mat-label>Y Coord</mat-label>
+            <mat-form-field>
+                <input matInput value={{c.coordThree.y}}>
+            </mat-form-field>
+        </fieldset>
+        
+    </mat-card-footer>
+
+</mat-card>
+
+
+

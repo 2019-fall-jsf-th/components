@@ -29,7 +29,7 @@ export class PizzaToppingComponent implements OnInit {
     //console.log(pts);
 
     this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
-    console.log(this.availablePizzaToppings);
+    //console.log(this.availablePizzaToppings);
   }
 
   get total() {

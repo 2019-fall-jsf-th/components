@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImageSizingComponent } from './image-sizing.component';
+import { RotateTriangleComponent } from './rotate-triangle.component';
 
-describe('ImageSizingComponent', () => {
-  let component: ImageSizingComponent;
-  let fixture: ComponentFixture<ImageSizingComponent>;
+describe('RotateTriangleComponent', () => {
+  let component: RotateTriangleComponent;
+  let fixture: ComponentFixture<RotateTriangleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ImageSizingComponent ]
+      declarations: [ RotateTriangleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ImageSizingComponent);
+    fixture = TestBed.createComponent(RotateTriangleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
