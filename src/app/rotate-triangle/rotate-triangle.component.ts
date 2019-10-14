@@ -32,21 +32,36 @@ export class RotateTriangleComponent implements OnInit {
 		newPoints += this.triangleDimensions[0].coordThree.x + ', ';
 		newPoints += this.triangleDimensions[0].coordThree.y;
 
-		console.log(newPoints);
+		//console.log(newPoints);
 
 		return newPoints;
 	}
 
-	get pointOneX() {
-		return '10, 0, 100, 100, 0, 100';
-		//return this.triangleDimensions.map(c => ({...c, coordOne: {x: 10} }) );
+	setPointOneX(event) {
+		this.triangleDimensions = this.triangleDimensions.map(c => ({...c, coordOne: {x: parseFloat(event.target.value), y: c.coordOne.y}}) );
+		//console.log(this);
 	}
 
-	setPointOneX(event) {
-		let xValue: number;
-		xValue = parseFloat(event.target.value);
-		//console.log(xValue);
-		this.triangleDimensions = this.triangleDimensions.map(c => ({...c, coordOne: {x: xValue, y: c.coordOne.y}}) );
+	setPointOneY(event) {
+		this.triangleDimensions = this.triangleDimensions.map(c => ({...c, coordOne: {x: c.coordOne.x, y: parseFloat(event.target.value)}}) );
+	}
+
+
+	setPointTwoX(event) {
+		this.triangleDimensions = this.triangleDimensions.map(c => ({...c, coordTwo: {x: parseFloat(event.target.value), y: c.coordTwo.y}}) );
+	}
+
+	setPointTwoY(event) {
+		this.triangleDimensions = this.triangleDimensions.map(c => ({...c, coordTwo: {x: c.coordTwo.x, y: parseFloat(event.target.value)}}) );
+	}
+
+
+	setPointThreeX(event) {
+		this.triangleDimensions = this.triangleDimensions.map(c => ({...c, coordThree: {x: parseFloat(event.target.value), y: c.coordThree.y}}) );
+	}
+
+	setPointThreeY(event) {
+		this.triangleDimensions = this.triangleDimensions.map(c => ({...c, coordThree: {x: c.coordThree.x, y: parseFloat(event.target.value)}}) );
 	}
 
 }

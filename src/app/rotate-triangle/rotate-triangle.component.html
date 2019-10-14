@@ -15,11 +15,11 @@
             <legend>Point 1</legend>
             <mat-label>X Coord</mat-label>
             <mat-form-field>
-                <input matInput id="coordOneX" [value]="c.coordOne.x" (change)='setPointOneX($event)'>
+                <input matInput type="number" min="0" max="100" id="coordOneX" [value]="c.coordOne.x" (change)='setPointOneX($event)'>
             </mat-form-field>
             <mat-label>Y Coord</mat-label>
             <mat-form-field>
-                <input matInput id="coordOneY" value={{c.coordOne.y}}>
+                <input matInput type="number" min="0" max="100" id="coordOneY" value={{c.coordOne.y}} (change)='setPointOneY($event)'>
             </mat-form-field>
         </fieldset>
 
@@ -27,11 +27,11 @@
             <legend>Point 2</legend>
             <mat-label>X Coord</mat-label>
             <mat-form-field>
-                <input matInput id="coordTwoX" value={{c.coordTwo.x}}>
+                <input matInput type="number" min="0" max="100" id="coordTwoX" value={{c.coordTwo.x}} (change)='setPointTwoX($event)'>
             </mat-form-field>
             <mat-label>Y Coord</mat-label>
             <mat-form-field>
-                <input matInput id="coordTwoY" value={{c.coordTwo.y}}>
+                <input matInput type="number" min="0" max="100" id="coordTwoY" value={{c.coordTwo.y}} (change)='setPointTwoY($event)'>
             </mat-form-field>
         </fieldset>
 
@@ -39,15 +39,13 @@
             <legend>Point 3</legend>
             <mat-label>X Coord</mat-label>
             <mat-form-field>
-                <input matInput id="coordThreeX" value={{c.coordThree.x}}>
+                <input matInput type="number" min="0" max="100" id="coordThreeX" value={{c.coordThree.x}} (change)='setPointThreeX($event)'>
             </mat-form-field>
             <mat-label>Y Coord</mat-label>
             <mat-form-field>
-                <input matInput id="coordThreeY" value={{c.coordThree.y}}>
+                <input matInput type="number" min="0" max="100" id="coordThreeY" value={{c.coordThree.y}} (change)='setPointThreeY($event)'>
             </mat-form-field>
         </fieldset>
-
-        <button mat-raised-button color="primary" (click)='pointOneX()'>Point 1 X</button>
         
     </mat-card-footer>
 
