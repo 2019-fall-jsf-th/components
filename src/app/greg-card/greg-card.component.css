@@ -1,8 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 mat-card {
     margin-top: 2em;
-    background-color: hsl(60, 100%, 89%);
+    background-color: hsl(0, 0%, 89%);
+    height: 500px;
 }
 
 mat-card-title {
     font-family: 'special elite';
 }
+
+
+
+div.slider {
+    display: flex;
+    width: 275px;
+   
+}
+
+div.slider h4 { 
+    width: 30%;
+    position: relative;
+    top: 14px;
+}
+
+mat-slider {
+    width: 70%;
+    height: 25px;
+}
+

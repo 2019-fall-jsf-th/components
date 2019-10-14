@@ -9,6 +9,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { GregCardComponent } from './greg-card/greg-card.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSelectModule } from '@angular/material/select'
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { GregCardComponent } from './greg-card/greg-card.component';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSliderModule,
+    MatDividerModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
