@@ -9,6 +9,15 @@ export class GregCardComponent implements OnInit {
 
   constructor() { }
 
+  someArray = [
+    {name: 'fred', blah: 'zay', key: 'quai'},
+    {name: 'barney', blah: 'blah-blah', key: 'qui'}
+  ];
+
+  buttonClickHandler() {
+    console.log('greg click event works');
+  }
+
   ngOnInit() {
   }
 

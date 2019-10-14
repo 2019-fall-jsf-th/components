@@ -1,1 +1,26 @@
-<p>greg-card works!</p>
+<mat-card>
+    <mat-card-title>
+        Greg's Component Card Title
+    </mat-card-title>
+
+    <mat-card-content>
+
+        <button
+            mat-button
+            (click)='buttonClickHandler()'>
+            random button 1
+        </button>
+
+        <div
+            *ngFor='let el of someArray'
+        >
+            <mat-checkbox
+                [(ngModel)]="el.key"
+            >
+                {{ el.name }} ({{ el.blah }})
+            </mat-checkbox>
+        </div>
+
+    </mat-card-content>
+
+</mat-card>
