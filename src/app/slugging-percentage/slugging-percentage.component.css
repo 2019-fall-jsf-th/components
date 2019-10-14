@@ -1,0 +1,13 @@
+mat-card {
+    background-color: aqua;
+    margin-top: 20px;
+}
+
+mat-card-content {
+    background-color: white;
+}
+
+mat-form-field {
+    margin: 10px 20px 0 20px;
+
+}

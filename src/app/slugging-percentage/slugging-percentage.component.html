@@ -1,1 +1,23 @@
-<p>slugging-percentage works!</p>
+<mat-card>
+
+    <mat-card-title>
+        Baseball Slugging Percentage Calculator
+    </mat-card-title>
+
+    <mat-card-content>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Total At Bats</mat-label>
+            <input matInput type="number">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Total Number of Bases</mat-label>
+            <input matInput type="number">
+        </mat-form-field>
+
+        <h3>Slugging Percentage: {{ slugging | percent }}</h3>
+
+    </mat-card-content>
+
+</mat-card>
