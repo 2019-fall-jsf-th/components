@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SluggingPercentageComponent implements OnInit {
 
+  atBats = 0;
+  bases = 0;
+
   constructor() { }
 
   ngOnInit() {
+
+
+  }
+
+  get slugging() {
+    return this.bases / this.atBats;
   }
 
 }
