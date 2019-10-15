@@ -5,16 +5,29 @@
 
 
 mat-card {
-    margin-top: 2em;
-    background-color: hsl(0, 0%, 89%);
-    height: 500px;
+    margin-top: 1em;
 }
 
 mat-card-title {
     font-family: 'special elite';
+    font-weight: 700;
 }
 
+div.controls {
+    float: left;
+    width: 300px;
+    margin-top: 30px;
+}
 
+div.grapharea {
+
+    float: left;
+    width: calc(100% - 350px);
+    max-width: 800px;
+    min-width: 500px;
+    margin-top: 30px;
+    height: 600px;
+}
 
 div.slider {
     display: flex;
@@ -28,8 +41,27 @@ div.slider h4 {
     top: 14px;
 }
 
-mat-slider {
-    width: 70%;
-    height: 25px;
+div.slider p {
+    width: 15%;
+    position: relative;
+    top: 14px;
 }
 
+mat-slider {
+    width: 55%;
+    height: 30px;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    height: 0;
+    clear: both;
+}
