@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { Apweek6Component } from './apweek6/apweek6.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingComponent
+    PizzaToppingComponent,
+    Apweek6Component
   ],
   imports: [
     BrowserModule,
