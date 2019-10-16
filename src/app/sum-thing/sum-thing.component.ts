@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SumThingComponent implements OnInit {
 
-  constructor() { }
+    number1 = 0;
+    number2 = 0;
 
-  ngOnInit() {
-  }
+    get sum() {
+        return this.number1 + this.number2;
+    }
+
+    constructor() { }
+
+    ngOnInit() {
+    }
 
 }

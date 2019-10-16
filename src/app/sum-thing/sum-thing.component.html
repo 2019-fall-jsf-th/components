@@ -1,4 +1,21 @@
-<p>sum-thing works!</p>
+<div>
+    <mat-form-field>
+        <input type="number">
+    </mat-form-field>
 
-<h2>DOES IT?</h2>
-<h1>IT DOES!</h1>
+    <mat-form-field>
+        <select mat-select>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input type="number">
+    </mat-form-field>
+    <button mat-button
+        type="button" name="button">=</button>
+    <span id="output">{{ calc.sum }}</span>
+</div>
