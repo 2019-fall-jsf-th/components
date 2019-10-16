@@ -1,21 +1,34 @@
 <div>
     <mat-form-field>
-        <input type="number">
+        <input matInput
+            value="0"
+            type="number"
+            [(ngModel)]="number1"
+        >
     </mat-form-field>
 
     <mat-form-field>
-        <select mat-select>
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
+        <select matNativeControl required [(ngModel)]="operator">
+            <option value="sum" selected="selected"> + </option>
+            <option value="difference"> - </option>
+            <option value="product"> * </option>
+            <option value="quotient"> / </option>
         </select>
     </mat-form-field>
 
     <mat-form-field>
-        <input type="number">
+        <input matInput
+            value="0"
+            type="number"
+            [(ngModel)]="number2"
+            >
     </mat-form-field>
-    <button mat-button
-        type="button" name="button">=</button>
-    <span id="output">{{ calc.sum }}</span>
+
+    <button mat-raised-button
+        (click)=selected
+        name="equals"
+    >=</button>
+    <span id="output">{{ calculate() }}</span>
+    <br>
+    <span>{{ number1 }} {{ symbol() }} {{ number2 }} = {{ calculate(operator) }}</span>
 </div>
