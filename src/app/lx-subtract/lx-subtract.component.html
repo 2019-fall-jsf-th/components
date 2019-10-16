@@ -1,8 +1,8 @@
 <div>
     <h3>Linda's subtraction component</h3>
-    <input type="number">
-    +
-    <input type="number">
-    <button>=</button>
-    answer
+    <input type="number" [(ngModel)]='firstNumber'>
+    &nbsp; - &nbsp;
+    <input type="number" [(ngModel)]='secondNumber'>
+    <button (click)='subtractNumbers()'>&nbsp;= &nbsp;</button>
+    {{ subtractionAnswer }}
 </div>
