@@ -1,8 +1,11 @@
-<div>
-    <h3>Linda's subtraction component</h3>
-    <input type="number" [(ngModel)]='firstNumber'>
-    &nbsp; - &nbsp;
-    <input type="number" [(ngModel)]='secondNumber'>
-    <button (click)='subtractNumbers()'>&nbsp;= &nbsp;</button>
-    {{ subtractionAnswer }}
-</div>
+<mat-card>
+    <mat-card-title>Linda's subtraction component</mat-card-title>
+    <mat-card-content>
+        <input matInput [(ngModel)]='firstNumber'>
+        &nbsp; - &nbsp;
+        <input matInput [(ngModel)]='secondNumber'>
+        <button mat-stroked-button color="accent" (click)='subtractNumbers()'>=</button>
+        {{ subtractionAnswer }}
+
+    </mat-card-content>
+</mat-card>
