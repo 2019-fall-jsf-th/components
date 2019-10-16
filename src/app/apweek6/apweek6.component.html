@@ -1,8 +1,10 @@
 <div>
-    <h3>Andy's Simple Division Component</h3>
-    <input type="number">
-    +
-    <input type="number">
-    <button>=</button>
-    Answer
+    <h3>Andy's Simple Addition Component</h3>
+    <input type="number" [(ngModel)]='numberOne'>
+    &nbsp; +&nbsp;
+    <input type="number" [(ngModel)]='numberTwo'>
+    &nbsp;
+    <button (click)='addNumbers()'>=</button>
+    &nbsp;
+    {{ answer }}
 </div>
