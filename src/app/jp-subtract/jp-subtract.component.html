@@ -1,8 +1,11 @@
 <div>
     <h3>Jonny's subtraction tool</h3>
-    <input type="number">
-    +
-    <input type="number">
-    <button>=</button>
-    Answer
+    <!--Hooking things up is a matter of binding (two way binding to a property)-->
+    <input type="number" [(ngModel)]='numberOne'>
+    &nbsp; - &nbsp;
+    <input type="number" [(ngModel)]='numberTwo'>
+    &nbsp;
+    <button (click)='subtractNumbers()'>=</button>
+    &nbsp;
+    {{ answer }}
 </div>

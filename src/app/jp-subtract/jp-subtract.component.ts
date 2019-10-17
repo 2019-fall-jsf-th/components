@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JpSubtractComponent implements OnInit {
 
+  numberOne = 20;
+  numberTwo = 10;
+  answer = 10;
+  subtractNumbers = () => {
+    this.answer = this.numberOne - this.numberTwo;
+  }
+
   constructor() { }
 
   ngOnInit() {
