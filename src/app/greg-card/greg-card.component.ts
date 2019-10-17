@@ -73,6 +73,8 @@ export class GregCardComponent implements OnInit {
   // background grayscale color
   slideBKGLum = 30;
   slideBKGColor = 'hsl(0, 0%, ' + this.slideBKGLum + '%)';
+  foreColorLum = (this.slideBKGLum + 50) % 100;
+  foreColor = 'hsl(0, 0%, ' + this.foreColorLum + '%)';
 
   onBKGColorChange(event: MatSliderChange) {
 
@@ -87,6 +89,8 @@ export class GregCardComponent implements OnInit {
     // hsl color (which is a composed string) from the numeric
     // "L" value which the slider is giving us.
     this.slideBKGColor = 'hsl(0, 0%, ' + this.slideBKGLum + '%)';
+    this.foreColorLum = (this.slideBKGLum + 50) % 100;
+    this.foreColor = 'hsl(0, 0%, ' + this.foreColorLum + '%)';  
   }
 
 
@@ -210,7 +214,7 @@ export class GregCardComponent implements OnInit {
         canvx = 0,
         canvy = 0;
 
-        ctx.lineWidth = 0.3;  // empirical
+        ctx.lineWidth = 0.2;  // empirical
 
       return {
 

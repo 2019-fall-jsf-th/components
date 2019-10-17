@@ -13,6 +13,10 @@ mat-card-title {
     font-weight: 700;
 }
 
+mat-card-subtitle, mat-form-field, mat-label, mat-select, mat-option {
+    color: inherit;
+}
+
 div.controls {
     float: left;
     width: 300px;
