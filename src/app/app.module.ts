@@ -11,12 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingComponent,
-    SluggingPercentageComponent
+    SluggingPercentageComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule,
