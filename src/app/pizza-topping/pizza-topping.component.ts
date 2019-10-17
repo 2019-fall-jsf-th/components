@@ -44,20 +44,19 @@ export class PizzaToppingComponent implements OnInit {
   // }
 
   get total() {
-   return this.availablePizzaToppings
-       .filter(x => x.checked)
-       .reduce(
-       (acc, x) => acc + x.price
+    return this.availablePizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price
         , 0
       );
   }
 
-  //creating the method to check all the options setting their pizza properties to true
   checkAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map( x => ({ ...x, checked: true}));
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: true }));
   }
 
   unCheckAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map( x => ({ ...x, checked: false}));
+    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }));
   }
 }

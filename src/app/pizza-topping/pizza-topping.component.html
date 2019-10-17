@@ -9,7 +9,6 @@
         >
             All
         </button>
-
         <button
             mat-button
             (click)='unCheckAll()'
@@ -18,14 +17,13 @@
         </button>
         <div
             *ngFor='let pt of availablePizzaToppings'
-        >   
-    <mat-checkbox
-        [(ngModel)]="pt.checked"
-    >
-        {{ pt.name }} ({{ pt.price | currency }})
-    </mat-checkbox>
-    
-        </div>           
+        >
+            <mat-checkbox
+                [(ngModel)]="pt.checked"
+            >
+                {{ pt.name }} ({{ pt.price | currency }})
+            </mat-checkbox>
+        </div>
         <h3>Total: {{ total | currency }}</h3>
     </mat-card-content>
 </mat-card>

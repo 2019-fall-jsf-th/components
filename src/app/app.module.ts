@@ -9,13 +9,18 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { JpSubtractComponent } from './jp-subtract/jp-subtract.component';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingComponent,
-    JpSubtractComponent
+    JpSubtractComponent,
+    SluggingPercentageComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,9 @@ import { JpSubtractComponent } from './jp-subtract/jp-subtract.component';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

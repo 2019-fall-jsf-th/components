@@ -1,0 +1,35 @@
+<mat-card>
+    <mat-card-title>
+        Tom Steele's Addition Component
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <input 
+            type="number" 
+            matInput 
+                placeholder="Number 1" 
+                [(ngModel)]="numberOne"
+            />
+        </mat-form-field>
+        &nbsp;
+        +
+        &nbsp;
+        <mat-form-field>
+                <input
+                    type="number" 
+                    matInput 
+                    placeholder="Number 2" 
+                    [(ngModel)]="numberTwo"
+                    />
+        </mat-form-field>
+        &nbsp;
+        <button
+            mat-raised-button
+            (click)='addNumbers()'
+        >
+            =
+        </button>
+        &nbsp;
+        {{ total }}
+    </mat-card-content>
+</mat-card>
