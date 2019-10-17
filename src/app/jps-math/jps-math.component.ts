@@ -9,6 +9,30 @@ export class JpsMathComponent implements OnInit {
 
   constructor() { }
 
+  numberOne: number;
+  numberTwo: number;
+  answer: number;
+  selectedOperator: string;
+
+  options = [
+    { name: "+", value: "+" },
+    { name: "-", value: "-" },
+    { name: "*", value: "*" },
+    { name: "/", value: "/" }
+  ]
+
+  calculateNumbers = () => {
+    if (this.selectedOperator == "+") {
+      this.answer = this.numberOne + this.numberTwo;
+    } else if (this.selectedOperator == "-") {
+      this.answer = this.numberOne - this.numberTwo;
+    } else if (this.selectedOperator == "*") {
+      this.answer = this.numberOne * this.numberTwo;
+    } else if (this.selectedOperator == "/") {
+      this.answer = this.numberOne / this.numberTwo;      
+    }
+  }
+
   ngOnInit() {
   }
 
