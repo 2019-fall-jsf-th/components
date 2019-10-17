@@ -8,13 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingComponent,
+    SluggingPercentageComponent,
     TjsAdditionComponent
   ],
   imports: [
@@ -24,6 +27,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     MatCheckboxModule,
     MatCardModule,
     MatButtonModule,
+    MatFormFieldModule,
     MatInputModule
   ],
   providers: [],
