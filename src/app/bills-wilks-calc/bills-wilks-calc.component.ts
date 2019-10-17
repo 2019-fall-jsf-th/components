@@ -12,4 +12,13 @@ export class BillsWilksCalcComponent implements OnInit {
   ngOnInit() {
   }
 
+  kilogramCoefficient = 2.20462262;
+  givenWeight = 0;
+  convertedWeight = '';
+
+  convertPounds = () => {
+    console.log('Hi there!');
+    this.convertedWeight = Math.ceil(this.givenWeight / this.kilogramCoefficient) + ' Kgs';
+  }
+
 }

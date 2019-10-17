@@ -1,25 +1,22 @@
 <mat-card>
-    <mat-card-title>Bill's Wilks Calculator!</mat-card-title>
+    <mat-card-title>Lb to Kg Converter</mat-card-title>
     <br>
     <mat-card-content>
-        <mat-form-field>
-            <mat-label>Gender</mat-label>
-            <mat-select mat-native-control>
-                <mat-option value='male'>Male</mat-option>
-                <mat-option value='female'>Female</mat-option>
-            </mat-select>
-            <br>
-        </mat-form-field>
-        <br>
-        <mat-form-field>
             
+        <mat-form-field>
+            <mat-label>Weight (lbs)</mat-label>
+            <input 
+                matInput 
+                type="number"
+                [(ngModel)]='givenWeight'
+            >
         </mat-form-field>
         <br>
-        <mat-form-field>
-            <mat-label>Weight Lifted</mat-label>
-            <input matInput type="number">
-        </mat-form-field>
-
+        <button
+            (click)='convertPounds()'
+        >Convert!</button>
+        <br>
+        <h3>{{ convertedWeight }}</h3>
         
     </mat-card-content>
 </mat-card>
