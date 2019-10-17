@@ -8,11 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { SumThingComponent } from './sum-thing/sum-thing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingComponent
+    PizzaToppingComponent,
+    SumThingComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +25,10 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

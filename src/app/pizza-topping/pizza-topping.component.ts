@@ -8,29 +8,15 @@ import { PizzaService } from '../pizza.service';
 })
 export class PizzaToppingComponent implements OnInit {
 
-  // Magic DI (dependency injection)
-  constructor(private pizzaSvc: PizzaService) { }
-
-  // pizzaSvc2: PizzaService;
-  // constructor2(pizzaSvc: PizzaService) {
-
-  //   this.pizzaSvc2 = pizzaSvc;
+  // magic dependency injection (DI)
+  constructor(private pizzaService: PizzaService) { }
+  // above (note 'private'--TypeScript automatic properties) is equivalent to the following:
+  //pizzaServiceInstanceVar: PizzaService;
+  // constructor(pizzaService: PizzaService) {
+  //   this.pizzaServiceInstanceVar = pizzaService;
   // }
 
   availablePizzaToppings = [];
-
-  ngOnInit() {
-
-    // New up a pizza service. : - (
-    //const ps = new PizzaService();
-
-    // Call get pizza toppings.
-    //const pts = ps.getAvailablePizzaToppings();
-    //console.log(pts);
-
-    this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
-    console.log(this.availablePizzaToppings);
-  }
 
   // total = 0;
   // calculateTotal() {
@@ -43,20 +29,45 @@ export class PizzaToppingComponent implements OnInit {
   //   ;
   // }
 
+  //countCalls = 0;
+/* TypeScript read-only property */
   get total() {
+    //console.log(++this.countCalls);
     return this.availablePizzaToppings
-      .filter(x => x.checked)
-      .reduce(
-        (acc, x) => acc + x.price
-        , 0
-      );
+          .filter(x => x.checked)
+          .reduce(
+            (acc, x) => acc + x.price
+            , 0
+          )
+        ;
   }
+
 
   checkAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: true }));
+      this.availablePizzaToppings = this.availablePizzaToppings
+          .map(x => ({ ...x, checked: true }));
   }
 
-  unCheckAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }));
+  uncheckAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings
+        .map(x => ({ ...x, checked: false }));
+  }
+
+  ngOnInit() {
+      // don't ever use "new", let Angular inject instead
+      // const pizzaService = new PizzaService();
+      // const pizzaTopppings = pizzaService.getAvailablePizzaToppings();
+      // console.log(pizzaTopppings);
+      // :(
+
+    // New up a pizza service. : - (
+    //const ps = new PizzaService();
+
+    // Call get pizza toppings.
+    //const pts = ps.getAvailablePizzaToppings();
+    //console.log(pts);
+
+    this.availablePizzaToppings = this.pizzaService.getAvailablePizzaToppings();
+    console.log(this.availablePizzaToppings);
   }
 }
