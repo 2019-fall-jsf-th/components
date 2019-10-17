@@ -32,7 +32,7 @@ export class PizzaToppingComponent implements OnInit {
   //countCalls = 0;
 /* TypeScript read-only property */
   get total() {
-    //console.log(this.countCalls++);
+    //console.log(++this.countCalls);
     return this.availablePizzaToppings
           .filter(x => x.checked)
           .reduce(
