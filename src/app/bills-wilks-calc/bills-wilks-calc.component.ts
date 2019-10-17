@@ -18,7 +18,7 @@ export class BillsWilksCalcComponent implements OnInit {
 
   convertPounds = () => {
     console.log('Hi there!');
-    this.convertedWeight = Math.ceil(this.givenWeight / this.kilogramDivisor) + ' Kg(s)';
+    this.convertedWeight = ((this.givenWeight / this.kilogramDivisor).toFixed(2)) + ' Kg(s)';
   }
 
 }
