@@ -23,12 +23,6 @@
             [(ngModel)]="number2"
             >
     </mat-form-field>
-
-    <button mat-raised-button
-        (click)=selected
-        name="equals"
-    >=</button>
-    <span id="output">{{ calculate() }}</span>
     <br>
     <span>{{ number1 }} {{ symbol() }} {{ number2 }} = {{ calculate(operator) }}</span>
 </div>
