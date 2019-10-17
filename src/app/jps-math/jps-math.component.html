@@ -3,15 +3,14 @@
         Joe Sweeney's Math Component
     </mat-card-title>
     <mat-card-content>
-        <input type="number">
-        <select name="" id="">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="/">/</option>
-            <option value="*">*</option>
+        <input type="number" [(ngModel)]='numberOne'>
+        <select [(ngModel)]="selectedOperator">
+            <option *ngFor="let o of options">
+                {{o.name}}
+             </option>
         </select>
-        <input type="number">
-        <button>=</button>
-        answer
+        <input type="number" [(ngModel)]='numberTwo'>
+        <button (click)='calculateNumbers()'>=</button>
+        {{ answer }}
     </mat-card-content>
 </mat-card>
