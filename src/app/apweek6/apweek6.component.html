@@ -1,5 +1,8 @@
-<div>
-    <h3>Andy's Simple Addition Component</h3>
+<mat-card>
+    <mat-card-title>
+        Andy's Simple Addition Component
+    </mat-card-title>
+    <mat-card-content>
     <input type="number" [(ngModel)]='numberOne'>
     &nbsp; +&nbsp;
     <input type="number" [(ngModel)]='numberTwo'>
@@ -7,4 +10,8 @@
     <button (click)='addNumbers()'>=</button>
     &nbsp;
     {{ answer }}
-</div>
+    </mat-card-content>
+</mat-card>
+
+
+
