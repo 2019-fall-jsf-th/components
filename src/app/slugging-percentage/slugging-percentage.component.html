@@ -1,0 +1,26 @@
+<mat-card>
+
+    <mat-card-title>
+        Baseball Slugging Percentage Calculator
+    </mat-card-title>
+
+    <img mat-card-image src="https://www.ocregister.com/wp-content/uploads/2018/06/ocvarsity-baseball8.jpg?w=620" 
+            alt="Baseball on a chalk line" >
+
+    <mat-card-content>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Total At Bats</mat-label>
+            <input matInput [(ngModel)]="atBats" type="number">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Total Number of Bases</mat-label>
+            <input matInput [(ngModel)]="bases" type="number">
+        </mat-form-field>
+
+        <p>Slugging Percentage: {{ slugging | number : '1.3-3' }}</p>
+
+    </mat-card-content>
+
+</mat-card>
