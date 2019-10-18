@@ -23,6 +23,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select'
 import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { SumThingComponent } from './sum-thing/sum-thing.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     GregCardComponent,
     RotateTriangleComponent,
     SluggingPercentageComponent,
-    TjsAdditionComponent
+    TjsAdditionComponent,
+    SumThingComponent
   ],
   imports: [
     /* Modules */
