@@ -1,9 +1,13 @@
 <mat-card>
     <mat-card-title>Linda's subtraction component</mat-card-title>
     <mat-card-content>
-        <input matInput [(ngModel)]='firstNumber'>
+        <mat-form-field>
+                <input matInput placeholder="First number" [(ngModel)]='firstNumber'>
+        </mat-form-field>
         &nbsp; - &nbsp;
-        <input matInput [(ngModel)]='secondNumber'>
+        <mat-form-field>
+            <input matInput placeholder="Second number" [(ngModel)]='secondNumber'>
+        </mat-form-field>
         <button mat-stroked-button color="accent" (click)='subtractNumbers()'>=</button>
         {{ subtractionAnswer }}
 
