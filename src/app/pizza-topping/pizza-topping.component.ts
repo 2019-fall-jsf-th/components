@@ -29,19 +29,8 @@ export class PizzaToppingComponent implements OnInit {
     //console.log(pts);
 
     this.availablePizzaToppings = this.pizzaSvc.getAvailablePizzaToppings();
-    console.log(this.availablePizzaToppings);
+    //console.log(this.availablePizzaToppings);
   }
-
-  // total = 0;
-  // calculateTotal() {
-  //   this.total = this.availablePizzaToppings
-  //     .filter(x => x.checked)
-  //     .reduce(
-  //       (acc, x) => acc + x.price
-  //       , 0
-  //     )
-  //   ;
-  // }
 
   get total() {
     return this.availablePizzaToppings
@@ -52,11 +41,17 @@ export class PizzaToppingComponent implements OnInit {
       );
   }
 
-  checkAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: true }));
+// Getter get <name of variable/property>() {}
+ /*
+  get total() {
+    return 667;
+  }
+*/
+  selectAll() {
+    this.availablePizzaToppings = this.availablePizzaToppings.map( x => ({...x, checked: true}));
   }
 
-  unCheckAll() {
-    this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }));
+  selectNone() {
+    this.availablePizzaToppings = this.availablePizzaToppings.map( x => ({...x, checked: false}));
   }
 }

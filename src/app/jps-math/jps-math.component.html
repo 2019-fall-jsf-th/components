@@ -1,0 +1,30 @@
+<mat-card>
+
+  <mat-card-title>
+    Joe Sweeney's Math Component
+  </mat-card-title>
+
+  <mat-card-content>
+    <mat-form-field>
+      <input matInput placeholder="Number" type="number" [(ngModel)]='numberOne'>
+    </mat-form-field>
+
+    <mat-form-field id="operators">
+      <mat-label>Operator</mat-label>
+      <mat-select [(ngModel)]="selectedOperator">
+        <mat-option *ngFor="let o of options" [value]="o.value">
+          {{o.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Number" type="number" [(ngModel)]='numberTwo'>
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" (click)='calculateNumbers()'>=</button>
+
+    {{ answer }}
+  </mat-card-content>
+
+</mat-card>
