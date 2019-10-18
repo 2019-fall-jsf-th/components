@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select'
 import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { SumThingComponent } from './sum-thing/sum-thing.component';
+import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { SumThingComponent } from './sum-thing/sum-thing.component';
     RotateTriangleComponent,
     SluggingPercentageComponent,
     TjsAdditionComponent,
-    SumThingComponent
+    SumThingComponent,
+    BillsWilksCalcComponent
   ],
   imports: [
     /* Modules */
