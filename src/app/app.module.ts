@@ -11,10 +11,11 @@ import { RotateTriangleComponent } from './rotate-triangle/rotate-triangle.compo
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
-import { JpsMathComponent } from './jps-math/jps-math.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { LxSubtractComponent } from './lx-subtract/lx-subtract.component';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
+import { JpsMathComponent } from './jps-math/jps-math.component';
 import { GregCardComponent } from './greg-card/greg-card.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatDividerModule } from '@angular/material/divider';
@@ -27,6 +28,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     /* Components */
     AppComponent,
     PizzaToppingComponent,
+    LxSubtractComponent,
     WisconsinSalesTaxComponent,
     JpsMathComponent,
     GregCardComponent,
