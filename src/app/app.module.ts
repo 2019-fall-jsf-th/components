@@ -11,12 +11,13 @@ import { RotateTriangleComponent } from './rotate-triangle/rotate-triangle.compo
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { JpsMathComponent } from './jps-math/jps-math.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 import { GregCardComponent } from './greg-card/greg-card.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select'
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
@@ -25,6 +26,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     /* Components */
     AppComponent,
     PizzaToppingComponent,
+    JpsMathComponent,
     GregCardComponent,
     RotateTriangleComponent,
     SluggingPercentageComponent,
@@ -38,11 +40,11 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     MatCheckboxModule,
     MatCardModule,
     MatButtonModule,
-    MatSliderModule,
-    MatDividerModule,
-    MatSelectModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
