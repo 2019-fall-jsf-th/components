@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-title>
+        Wisconsin Sales Tax Calculator
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <input
+                type="number"
+                matInput
+                [(ngModel)]="userInput"
+            />
+        </mat-form-field>
+        <button
+            mat-button
+            (click)='calculateSalesTax()'
+        >
+            Calculate Sales Tax
+        </button>
+        <br />
+        <h3>Total: {{ totalWithTax | currency }}</h3>
+    </mat-card-content>
+</mat-card>
