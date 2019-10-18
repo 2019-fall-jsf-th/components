@@ -32,7 +32,7 @@ export class RotateTriangleComponent implements OnInit {
 		newPoints += this.triangleDimensions[0].coordThree.x + ', ';
 		newPoints += this.triangleDimensions[0].coordThree.y;
 
-		console.log(newPoints);
+		//console.log(newPoints);
 
 		return newPoints;
 	}
