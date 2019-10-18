@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>
+        Andy's Simple Addition Component
+    </mat-card-title>
+    <mat-card-content>
+    <input type="number" [(ngModel)]='numberOne'>
+    &nbsp; +&nbsp;
+    <input type="number" [(ngModel)]='numberTwo'>
+    &nbsp;
+    <button (click)='addNumbers()'>=</button>
+    &nbsp;
+    {{ answer }}
+    </mat-card-content>
+</mat-card>
+
+
+

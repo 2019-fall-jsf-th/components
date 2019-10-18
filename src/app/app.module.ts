@@ -11,6 +11,7 @@ import { RotateTriangleComponent } from './rotate-triangle/rotate-triangle.compo
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { Apweek6Component } from './apweek6/apweek6.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { LxSubtractComponent } from './lx-subtract/lx-subtract.component';
@@ -28,6 +29,7 @@ import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
     /* Components */
     AppComponent,
     PizzaToppingComponent,
+    Apweek6Component,
     LxSubtractComponent,
     WisconsinSalesTaxComponent,
     JpsMathComponent,
