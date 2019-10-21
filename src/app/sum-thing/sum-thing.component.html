@@ -10,12 +10,9 @@
 
     <mat-form-field>
         <mat-label> + - * / </mat-label>
-        <select matNativeControl [(ngModel)]="operator">
-            <option value="sum" selected="selected"> + </option>
-            <option value="difference"> - </option>
-            <option value="product"> * </option>
-            <option value="quotient"> / </option>
-        </select>
+        <mat-select matNativeControl [(ngModel)]="operator">
+            <mat-option *ngFor="let op of operations" [value]="op.symbol">{{ op.name }}</mat-option>
+        </mat-select>
     </mat-form-field>
 
     <mat-form-field>
