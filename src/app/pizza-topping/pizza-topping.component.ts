@@ -60,3 +60,4 @@ export class PizzaToppingComponent implements OnInit {
     this.availablePizzaToppings = this.availablePizzaToppings.map(x => ({ ...x, checked: false }));
   }
 }
+console.log('This worked!');
