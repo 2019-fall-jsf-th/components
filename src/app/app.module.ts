@@ -10,12 +10,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { TjeMultiplicationComponent } from './tje-multiplication/tje-multiplication.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingComponent,
-    TjsAdditionComponent
+    TjsAdditionComponent,
+    TjeMultiplicationComponent
   ],
   imports: [
     BrowserModule,
