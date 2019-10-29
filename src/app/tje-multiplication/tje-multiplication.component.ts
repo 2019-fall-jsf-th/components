@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TjeMultiplicationComponent implements OnInit {
 
+  numberOne = 10;
+  numberTwo = 5;
+  answer = 50;
+  multiplyNumbers = () => {
+    this.answer = this.numberOne * this.numberTwo;
+  }
+  
   constructor() { }
 
   ngOnInit() {

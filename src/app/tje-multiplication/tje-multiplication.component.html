@@ -1,8 +1,10 @@
 <div>
     <h3>Tim's Multiplication Component</h3>
-    <input type="number">
-    *
-    <input type="number">
-    <button>=</button>
-    Answer
+    <input type="number" [(ngModel)]='numberOne'>
+    &nbsp; * &nbsp;
+    <input type="number"[(ngModel)]='numberTwo'>
+    &nbsp;
+    <button (click)='multiplyNumbers()'>=</button>
+    &nbsp;
+    {{answer}}
 </div>
