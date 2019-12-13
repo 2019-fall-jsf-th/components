@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-title>
+        Tim's Multiplication Component
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <input 
+                type="number" 
+                matInput 
+                    placeHolder="Number 1" 
+                    [(ngModel)]='numberOne'>
+        </mat-form-field>
+        &nbsp; 
+        * 
+        &nbsp;
+        <mat-form-field>
+                <input 
+                type="number"
+                matInput
+                    placeHolder="Number 2"
+                    [(ngModel)]='numberTwo'>
+        </mat-form-field>
+        &nbsp;
+        <button 
+            mat-raised-button 
+            (click)='multiplyNumbers()'
+        >
+            =
+        </button>
+        &nbsp;
+        {{answer}}
+    </mat-card-content>
+</mat-card>
