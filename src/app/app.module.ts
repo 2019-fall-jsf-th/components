@@ -28,6 +28,7 @@ import { TjeMultiplicationComponent } from './tje-multiplication/tje-multiplicat
 import { SumThingComponent } from './sum-thing/sum-thing.component';
 import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.component';
 
+
 @NgModule({
   declarations: [
     /* Components */
