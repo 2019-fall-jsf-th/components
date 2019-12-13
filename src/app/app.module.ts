@@ -24,6 +24,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select'
 import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
 import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { TjeMultiplicationComponent } from './tje-multiplication/tje-multiplication.component';
 import { SumThingComponent } from './sum-thing/sum-thing.component';
 import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.component';
 
@@ -32,6 +33,8 @@ import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.com
     /* Components */
     AppComponent,
     PizzaToppingComponent,
+    TjsAdditionComponent,
+    TjeMultiplicationComponent,
     JpSubtractComponent,
     Apweek6Component,
     LxSubtractComponent,
@@ -40,7 +43,6 @@ import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.com
     GregCardComponent,
     RotateTriangleComponent,
     SluggingPercentageComponent,
-    TjsAdditionComponent,
     SumThingComponent,
     BillsWilksCalcComponent
   ],
