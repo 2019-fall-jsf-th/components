@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PizzaToppingComponent } from './pizza-topping/pizza-topping.component';
-import { RandomToppingsCaheilmanComponent } from './random-toppings-caheilman/random-toppings-caheilman.component';
+// import { RandomToppingsCaheilmanComponent } from './random-toppings-caheilman/random-toppings-caheilman.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
@@ -13,12 +13,14 @@ import { MatInputModule } from '@angular/material/input';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { CaheilmanRandomNumberComponent } from './caheilman-random-number/caheilman-random-number.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingComponent,
-    RandomToppingsCaheilmanComponent,
+    CaheilmanRandomNumberComponent,
+    // RandomToppingsCaheilmanComponent,
   ],
   imports: [
     BrowserModule,

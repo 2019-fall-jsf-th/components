@@ -1,0 +1,80 @@
+<mat-card>
+    <mat-card-title>
+        Random Number Generator
+    </mat-card-title>
+    <mat-card-content>
+
+        <form>
+            <div class="form-group">
+                <label for="min">Minimum</label>
+                <input 
+                    type="number" 
+                    class="form-control" 
+                    id="min" 
+                    [(ngModel)]="randomMin"
+                    name="randomMin"                   
+                >
+            </div>
+            <div class="form-group">
+                <label for="max">Maximum</label>
+                <input 
+                    type="number" 
+                    class="form-control" 
+                    id="max" 
+                    [(ngModel)]="randomMax"
+                    name="randomMax"                   
+                >
+            </div>
+        </form>
+
+
+
+
+        <!-- 
+        <mat-form-field class="example-full-width" style="padding: 0 10px;">
+            <input 
+                type="number" 
+                matInput 
+                placeholder="Minimum"
+                #min
+                (keyup)="0"
+            >
+        </mat-form-field>
+        <mat-form-field class="example-full-width" style="padding: 0 10px;">
+            <input 
+                type="number" 
+                matInput 
+                placeholder="Maximum"
+            >
+        </mat-form-field> -->
+
+        <br/>
+
+
+
+
+          <!-- <label>Minimum: </label><input />
+          <br/>
+          <label>Maximum: </label><input />
+          <br/> -->
+        <button
+            mat-button
+            (click)='randomNumber()'
+        >
+            Randomize!
+        </button>
+       
+        <div
+            *ngFor='let pt of availablePizzaToppings'
+        >
+            <mat-checkbox
+                [(ngModel)]="pt.checked"
+            >
+                {{ pt.name }} ({{ pt.price | currency }})
+            </mat-checkbox>
+        </div>
+        <h3>Your Random Number: {{ total | currency }}</h3>
+    </mat-card-content>
+</mat-card>
+
+
