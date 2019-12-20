@@ -59,21 +59,14 @@
           <br/> -->
         <button
             mat-button
-            (click)='randomNumber()'
+            (click)='randomize()'
         >
             Randomize!
         </button>
        
-        <div
-            *ngFor='let pt of availablePizzaToppings'
-        >
-            <mat-checkbox
-                [(ngModel)]="pt.checked"
-            >
-                {{ pt.name }} ({{ pt.price | currency }})
-            </mat-checkbox>
+        <div>
+            <p>Your random number is {{ this.randomNumber }}</p>
         </div>
-        <h3>Your Random Number: {{ total | currency }}</h3>
     </mat-card-content>
 </mat-card>
 
