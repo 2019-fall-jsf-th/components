@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Lb to Kg Converter</mat-card-title>
+    <br>
+    <mat-card-content>
+            
+        <mat-form-field>
+            <mat-label>Weight (lbs)</mat-label>
+            <input 
+                matInput 
+                type="number"
+                [(ngModel)]='givenWeight'
+            >
+        </mat-form-field>
+        <br>
+        <button
+            (click)='convertPounds()'
+        >Convert!</button>
+        <br>
+        <h2>{{ convertedWeight }}</h2>
+        
+    </mat-card-content>
+</mat-card>
+

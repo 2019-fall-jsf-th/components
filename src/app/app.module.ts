@@ -1,11 +1,14 @@
+/* Modules */
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
 
+/* Components */
 import { AppComponent } from './app.component';
 import { PizzaToppingComponent } from './pizza-topping/pizza-topping.component';
 // import { RandomToppingsCaheilmanComponent } from './random-toppings-caheilman/random-toppings-caheilman.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RotateTriangleComponent } from './rotate-triangle/rotate-triangle.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,15 +17,42 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CaheilmanRandomNumberComponent } from './caheilman-random-number/caheilman-random-number.component';
+import { JpSubtractComponent } from './jp-subtract/jp-subtract.component';
+import { Apweek6Component } from './apweek6/apweek6.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { LxSubtractComponent } from './lx-subtract/lx-subtract.component';
+import { WisconsinSalesTaxComponent } from './wisconsin-sales-tax/wisconsin-sales-tax.component';
+import { JpsMathComponent } from './jps-math/jps-math.component';
+import { GregCardComponent } from './greg-card/greg-card.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+import { TjeMultiplicationComponent } from './tje-multiplication/tje-multiplication.component';
+import { SumThingComponent } from './sum-thing/sum-thing.component';
+import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.component';
+
 
 @NgModule({
   declarations: [
+    /* Components */
     AppComponent,
     PizzaToppingComponent,
     CaheilmanRandomNumberComponent,
-    // RandomToppingsCaheilmanComponent,
+    TjsAdditionComponent,
+    TjeMultiplicationComponent,
+    JpSubtractComponent,
+    Apweek6Component,
+    LxSubtractComponent,
+    WisconsinSalesTaxComponent,
+    JpsMathComponent,
+    GregCardComponent,
+    RotateTriangleComponent,
+    SluggingPercentageComponent,
+    SumThingComponent,
+    BillsWilksCalcComponent
   ],
   imports: [
+    /* Modules */
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
@@ -33,6 +63,11 @@ import { CaheilmanRandomNumberComponent } from './caheilman-random-number/caheil
     MatSliderModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
