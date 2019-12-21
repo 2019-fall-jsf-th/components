@@ -1,0 +1,43 @@
+<mat-card>
+    <mat-card-title>
+        Random Number Generator
+    </mat-card-title>
+    <mat-card-content>
+
+        <form>
+            <div class="form-group">
+                <label for="min">Minimum</label>
+                <input 
+                    value="0"
+                    class="form-control" 
+                    [(ngModel)]="randomMin"
+                    name="randomMin"                   
+                >
+            </div>
+            <!-- <span>{{randomMin}}</span> -->
+            <div class="form-group">
+                <label for="max">Maximum</label>
+                <input 
+                    value="10" 
+                    class="form-control" 
+                    id="max" 
+                    [(ngModel)]="randomMax"
+                    name="randomMax"                   
+                >
+            </div>
+        </form>
+        <br/>
+        <button
+            mat-button
+            (click)='randomize()'
+        >
+            Randomize!
+        </button>
+       
+        <div>
+            <p>Your random number is {{ randomNumber }}</p>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+
