@@ -11,7 +11,7 @@ export class CaheilmanRandomNumberComponent implements OnInit {
 
   randomMin: number = 0;
   randomMax: number = 10;
-  randomNumber: any = 0;
+  randomNumber: any = "0";
 
   randomize() {
     // console.log("this works")
