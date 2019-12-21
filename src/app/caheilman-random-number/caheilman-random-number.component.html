@@ -26,37 +26,7 @@
                 >
             </div>
         </form>
-
-
-
-
-        <!-- 
-        <mat-form-field class="example-full-width" style="padding: 0 10px;">
-            <input 
-                type="number" 
-                matInput 
-                placeholder="Minimum"
-                #min
-                (keyup)="0"
-            >
-        </mat-form-field>
-        <mat-form-field class="example-full-width" style="padding: 0 10px;">
-            <input 
-                type="number" 
-                matInput 
-                placeholder="Maximum"
-            >
-        </mat-form-field> -->
-
         <br/>
-
-
-
-
-          <!-- <label>Minimum: </label><input />
-          <br/>
-          <label>Maximum: </label><input />
-          <br/> -->
         <button
             mat-button
             (click)='randomize()'
@@ -65,7 +35,7 @@
         </button>
        
         <div>
-            <p>Your random number is {{ this.randomNumber }}</p>
+            <p>Your random number is {{ randomNumber }}</p>
         </div>
     </mat-card-content>
 </mat-card>
