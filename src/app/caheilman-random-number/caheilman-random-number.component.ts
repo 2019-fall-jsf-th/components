@@ -7,24 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaheilmanRandomNumberComponent implements OnInit {
 
-  ngOnInit() { 
-  }
 
-  randomMin=0
-  randomMax=10
-  // randomNumber=0
+
+  randomMin: number = 0;
+  randomMax: number = 10;
+  randomNumber: any = 0;
 
   randomize() {
-    console.log("this works")
-    if ( this.randomMin > this.randomMax) {
-      var errorNumber = "Minimum is greater than Maximum. Please try again."
-      console.log(errorNumber);
+    // console.log("this works")
+    if ( this.randomMin >= this.randomMax) {
+     this.randomNumber = "impossible: minimum is greater than or equal to Maximum. Please try again."
     } else {
-     var randomNumber = Math.floor((Math.random() * this.randomMax) + this.randomMin);
-      console.log(randomNumber);
+     this.randomNumber = Math.floor((Math.random() * this.randomMax) + this.randomMin);
+      console.log(this.randomNumber);
     }
   }
   
   // // get randomNumber
+
+  ngOnInit() { 
+  }
 
 }
