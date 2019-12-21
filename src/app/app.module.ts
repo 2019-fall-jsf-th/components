@@ -26,7 +26,7 @@ import { JpsMathComponent } from './jps-math/jps-math.component';
 import { GregCardComponent } from './greg-card/greg-card.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { SluggingPercentageComponent } from './slugging-percentage/slugging-percentage.component';
-import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
+// import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 import { TjeMultiplicationComponent } from './tje-multiplication/tje-multiplication.component';
 import { SumThingComponent } from './sum-thing/sum-thing.component';
 import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.component';
@@ -38,7 +38,7 @@ import { BillsWilksCalcComponent } from './bills-wilks-calc/bills-wilks-calc.com
     AppComponent,
     PizzaToppingComponent,
     CaheilmanRandomNumberComponent,
-    TjsAdditionComponent,
+    // TjsAdditionComponent,
     TjeMultiplicationComponent,
     JpSubtractComponent,
     Apweek6Component,
